@@ -37,8 +37,8 @@ struct CounterView: View {
                         Text("Count -")
                             .padding()
                             .frame(maxHeight: 30)
-                            .background(.blue)
-                            .foregroundStyle(.white)
+                            .background(colorScheme == .dark ? Color(red:102/255, green:102/255, blue:102/255) : Color.blue)
+                            .foregroundStyle(colorScheme == .dark ? Color.black : Color.white)
                     }
                     .clipShape(RoundedRectangle(cornerRadius: 25))
                     Spacer()
@@ -48,8 +48,8 @@ struct CounterView: View {
                         Text("Count +")
                             .padding()
                             .frame(maxHeight: 30)
-                            .background(Color.green)
-                            .foregroundStyle(.white)
+                            .background(colorScheme == .dark ? Color(red:230/255, green:230/255, blue:230/255) : Color.green)
+                            .foregroundStyle(colorScheme == .dark ? Color.black : Color.white)
                     }
                     .clipShape(RoundedRectangle(cornerRadius: 25))
                     Spacer()

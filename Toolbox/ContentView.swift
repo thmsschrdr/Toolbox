@@ -26,8 +26,10 @@ struct ContentView: View {
             
             BillSplitView()
                 .tabItem {
-                    Label("Journal", systemImage: "book.circle")
+                    Label("Kostenteiler", systemImage: "dollarsign.circle.fill")
+                        
                 }
+                
         }
         
     }
