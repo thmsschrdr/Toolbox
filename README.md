@@ -1,6 +1,6 @@
 # 3 in 1 Toolbox app
 
-This is a small project of mine to show hires my coding experience in SwiftUI and how I set up my GitHub
+This is a small project of mine to show my coding experience in SwiftUI and how I set up my GitHub for potential employers.
 
 This app includes
 * A Counter
