@@ -11,17 +11,17 @@ This app includes
 
 This app will count up or down by the press of the corresponding button.
 
-![An app that lets you count up or down by the press of a button.](https://i.imgur.com/O8W46uf.png)
+<img src="https://i.imgur.com/O8W46uf.png" width=50% height=50%>
 
 ## Textmanipulator
 
 This app takes your entered text and then transform it to ALL CAPS, First Letter or all lowercased. The text is easily copied by the button next to the textfield.
 
-![An app that let's you enter text and then manipulate it.](https://i.imgur.com/8Wy7Ikc.png)
+<img src="https://i.imgur.com/8Wy7Ikc.png" width=50% height=50%>
 
 ## Bill Splitter
 
 This app will split your bill. You can choose to split between 2 and 99 people and add a tip if you want.
 
-![An app that splits up the bill](https://i.imgur.com/VoL8czZ.png)
+<img src="https://i.imgur.com/VoL8czZ.png" width=50% height=50%>
 
