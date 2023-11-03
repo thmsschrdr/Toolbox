@@ -13,6 +13,7 @@ struct BillSplitView: View {
     @State private var numberOfPeople = 2
     @State private var tipPercentage = 20
     @FocusState private var amountIsFocused: Bool
+    @Environment(\.colorScheme) var colorScheme
     
     let tipPercentages = [10, 15, 20, 25, 0]
     
@@ -58,9 +59,13 @@ struct BillSplitView: View {
             .navigationTitle("Bill Splitter")
             .toolbar {
                 if amountIsFocused {
-                    Button("Done", systemImage: "keyboard.chevron.compact.down.fill") {
+                    Button(action: {
                         amountIsFocused = false
-                    }
+                    }, label: {
+                        Image(systemName: "keyboard.chevron.compact.down.fill")
+                            .foregroundStyle(colorScheme == .dark ? Color.white : Color.black)
+                    })
+                    
                 }
             }
         }

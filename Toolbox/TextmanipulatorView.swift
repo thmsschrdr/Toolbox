@@ -9,6 +9,7 @@ import SwiftUI
 
 struct TextmanipulatorView: View {
     
+    @FocusState private var textFieldIsFocused: Bool
     @State private var text = ""
     @State private var capMode = 0
     @State private var copied = false {
@@ -68,6 +69,7 @@ struct TextmanipulatorView: View {
                                         RoundedRectangle(cornerRadius: 16)
                                             .stroke(.secondary, lineWidth: 1)
                                     )
+                                .focused($textFieldIsFocused)
                             
                             Button(action: {
                                 let pasteboard = UIPasteboard.general
@@ -127,6 +129,16 @@ struct TextmanipulatorView: View {
                         .padding(.bottom)
                     }
                     .navigationTitle("Textmanipulator")
+                    .toolbar {
+                        if textFieldIsFocused {
+                            Button(action: {
+                                textFieldIsFocused = false
+                            }, label: {
+                                Image(systemName: "keyboard.chevron.compact.down.fill")
+                                    .foregroundStyle(colorScheme == .dark ? Color.white : Color.black)
+                            })
+                        }
+                    }
                 }
             }.frame(maxWidth: .infinity, maxHeight: .infinity)
         }
